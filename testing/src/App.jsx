@@ -1,35 +1,80 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// soal 3 //
+
+// function App() {
+// const title = "Coba JSX{}";
+// const pargarph = "Lorem ipsum dolor sit amet.";
+// const tema = {
+//   pargarph: {
+//     backgroundColor: "blue",
+//     color: "white",
+//   },
+// }; 
+
+
+
+//   return (
+//     <>
+//       <img src="cobaReact.png" alt="cobaReact" />
+//       <h1 style={{ color: "red "}}>{<title>Coba React</title>}</h1>
+//       <p style={tema.pargarph}>{pargarph}</p>
+//     </>
+//   );
+// }
+
+// soal 4 //
 
 function App() {
-  const [count, setCount] = useState(0)
+  const user = {
+    name: 'Abdilah',
+    age: 16,
+    location: 'Depok',
+    hobbies: ['Reading', 'Gaming', 'designing'],
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div>
+      <h1>{user.name}'s Profile</h1>
+      <p>Age: {user.age}</p>
+      <p>Location: {user.location}</p>
+      <h2>Hobbies:</h2>
+      <ul>
+        {user.hobbies.map((hobby, index) => (
+          <li key={index}>{hobby}</li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
-export default App
+// soal 2 //
+
+// export function App() {
+//   return (
+//     <div>
+//       <div className="intro">
+//         <h1>Welcome to my website!</h1>
+//       </div>
+//       <p style={{ color: "blue" }} className="summary">
+//         You can find my thoughts here.
+//         <br /><br />
+//         <b>And <i>pictures</i></b> of scientists!
+//       </p>
+//     </div>
+//   );
+// }
+
+// soal //
+
+// function App() {
+//   return (
+//     <div>
+//       <h1>Hello, World!</h1>
+//       <p>Ini adalah contoh JSX sederhana di React.</p>
+//     </div>
+//   );
+// }
+
+
+
+
+export default App;
