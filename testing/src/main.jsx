@@ -1,10 +1,13 @@
-import { StrictMode } from "react";
+import { Children, StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
-import App from "./App.jsx";
+
+
+import Greeting from "./m3/greeating.jsx";
+;
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
+    <Greeting  />
   </StrictMode>
 );
