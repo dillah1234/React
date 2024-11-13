@@ -6,11 +6,13 @@ import { createRoot } from "react-dom/client";
 ;
 
 
-import { InputForm } from "./m4/Login/utility.jsx";
+
+;
+import RegisterPage from "./m4/Component/Register.jsx";
 ;
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    < InputForm/>
+    < RegisterPage/>
   </StrictMode>
 );
