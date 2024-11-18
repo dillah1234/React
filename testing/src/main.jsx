@@ -2,20 +2,16 @@ import { Children, StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
 import "./index.css";
+import { DeliveryStatus, Greeting, Notification } from "./m5/finaly.jsx";
 
-;
 
 
-  
-;
 
-;
-import RegisterPage from "./m4/pages/Register.jsx";
 
-;
+
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    < RegisterPage/>
+    <DeliveryStatus status="delivered" />
   </StrictMode>
 );
