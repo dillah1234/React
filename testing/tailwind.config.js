@@ -8,5 +8,8 @@ export default {
     extend: {},
   },
   plugins: [],
+  bacgroundImage: {
+    kucing: 'url("././images/Rackets.png")'
+  }
 }
 
