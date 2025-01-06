@@ -12,16 +12,21 @@ import PreventDefaultExample from "./m7/praktek.jsx";
 import EventPropagationExample from "./m7/praktek2.jsx";
 import ShowAlert from "./m7/praktek3.jsx";
 import SimpleClick from "./m7/praktek4.jsx";
+// import Counter from "./m8/number.jsx";
+import ItemList from "./m8/array.jsx";
+import Counter from "./m8/praktek1.jsx";
+import LoginStatus from "./m8/praktek2.jsx";
+import SimpleCalculator from "./m8/praktek3.jsx";
 
 
 
-
+  
 
 
 
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <SimpleClick />
+    < SimpleCalculator/>
   </StrictMode>
 );
