@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 
 function SimpleCalculator() {
-  // State untuk menyimpan angka pertama, angka kedua, dan hasil operasi
   const [number1, setNumber1] = useState(0);
   const [number2, setNumber2] = useState(0);
   const [result, setResult] = useState(null);
 
-  // Fungsi untuk menangani operasi matematika
   const handleAddition = () => {
     setResult(Number(number1) + Number(number2));
   };

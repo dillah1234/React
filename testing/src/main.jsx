@@ -17,8 +17,11 @@ import ItemList from "./m8/array.jsx";
 import Counter from "./m8/praktek1.jsx";
 import LoginStatus from "./m8/praktek2.jsx";
 import SimpleCalculator from "./m8/praktek3.jsx";
+import SimpleNameList from "./m9/Array.jsx";
+import UpdateStateWithMap from "./m9/Map.jsx";
+import ProductList from "./m9/soal1.jsx";
 
-
+   
 
   
 
@@ -26,7 +29,7 @@ import SimpleCalculator from "./m8/praktek3.jsx";
 
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    < SimpleCalculator/>
+  <StrictMode> 
+    < ProductList/>
   </StrictMode>
 );

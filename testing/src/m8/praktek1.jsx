@@ -1,20 +1,16 @@
 import React, { useState } from 'react';
 
 function Counter() {
-  // Inisialisasi state dengan nilai awal 0
   const [counter, setCounter] = useState(0);
 
-  // Fungsi untuk menambah nilai counter
   const increment = () => {
     setCounter(counter + 1);
   };
 
-  // Fungsi untuk mengurangi nilai counter
   const decrement = () => {
     setCounter(counter - 1);
   };
 
-  // Fungsi untuk mereset nilai counter ke 0
   const reset = () => {
     setCounter(0);
   };
