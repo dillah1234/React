@@ -12,7 +12,7 @@ import PreventDefaultExample from "./m7/praktek.jsx";
 import EventPropagationExample from "./m7/praktek2.jsx";
 import ShowAlert from "./m7/praktek3.jsx";
 import SimpleClick from "./m7/praktek4.jsx";
-import Counter from "./m8/number.jsx";
+// import Counter from "./m8/number.jsx";
 import ItemList from "./m8/array.jsx";
 // import Counter from "./m8/praktek1.jsx";
 import LoginStatus from "./m8/praktek2.jsx";
@@ -22,13 +22,20 @@ import UpdateStateWithMap from "./m9/Map.jsx";
 import ProductList from "./m9/soal1.jsx";
 // import Counter from "./m10/noeffect.jsx";
 import WithDependency from "./m10/withEffect.jsx";
-// import Counter from "./m10/s1.jsx";
+import Counter from "./m10/s1.jsx";
 import CountLogger from "./m10/s2.jsx";
 import TextLogger from "./m10/s3.jsx";
 // import Statusbar, { useOnlineStatus } from "./m11/Hooks.jsx";
 import useTheme from "./m11/s1.jsx";
 import ToggleTheme from "./m11/s1.jsx";
 import TaskStatusComponent from "./m11/cabang s2.jsx";
+// import HomePage from "./m12/privite.jsx";
+import Home from "./m12/LinkTo.jsx";
+// import HomePage from "./m12/s3.jsx";
+import Navigation from "./m12/s3.jsx";
+import HomePage from "./m12/s4.jsx";
+import DashboardPage from "./m12/s5.jsx";
+import NotFoundPage from "./m12/s2.jsx";
 
 
 
@@ -44,6 +51,6 @@ import TaskStatusComponent from "./m11/cabang s2.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>  
-    <TaskStatusComponent/>
+    < HomePage/>
   </StrictMode>
 );
