@@ -6,7 +6,7 @@ import { DeliveryStatus, Greeting, Notification } from "./m5/finaly.jsx";
 import RenderingList from "./m6/Try.jsx";
 import UserList from "./m6/praktek.jsx";
 import Card from "./m6/RenderingList/fragments/Card.jsx";
-import App from "./m6/RenderingList/fragments/App.jsx";
+// import App from "./m6/RenderingList/fragments/App.jsx";
 import Event from "./m7/try.jsx";
 import PreventDefaultExample from "./m7/praktek.jsx";
 import EventPropagationExample from "./m7/praktek2.jsx";
@@ -36,6 +36,9 @@ import Navigation from "./m12/s3.jsx";
 import HomePage from "./m12/s4.jsx";
 import DashboardPage from "./m12/s5.jsx";
 import NotFoundPage from "./m12/s2.jsx";
+import CobaAxios from "./m13/s1.jsx";
+import App from "./m13/s2.jsx";
+// import CobaAxios from "./m13/Axios.jsx";
 
 
 
@@ -51,6 +54,6 @@ import NotFoundPage from "./m12/s2.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>  
-    < HomePage/>
+    < App/>
   </StrictMode>
 );
