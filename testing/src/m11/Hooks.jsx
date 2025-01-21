@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 
 // Custom Hook
 export function useOnlineStatus(initialState) {
-    const [state, setState] = useState(initialState);
-
-    useEffect(() => {
+    const [state, setState] = useState(initialState);  // Function adalah blok kode yang dapat dieksekusi dan digunakan untuk mengorganisasi logika yang bisa dipanggil kembali berkali-kali //
+                                                       // Custom Hook adalah fungsi khusus di React yang dibuat untuk mengelola logika stateful atau bekerja dengan fitur React Hooks seperti useState, useEffect, dll //
+    useEffect(() => {                                  // berawal kata dengan "use" //xx
         function handleOnline() {
             setState(true);
         }

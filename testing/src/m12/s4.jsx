@@ -39,7 +39,7 @@ const HomePage = () => {
 
 // Komponen ProfilePage
 const ProfilePage = () => {
-  const { userId } = useParams(); // Mengambil parameter userId dari URL
+  const { userId } = useParams(); // Mengambil parameter userId dari URL   useParams: Hook untuk mengambil parameter dinamis dari URL
   return (
     <div style={styles.container}>
       <h1 style={styles.heading}>Profil Pengguna</h1>

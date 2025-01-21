@@ -36,9 +36,23 @@ import Navigation from "./m12/s3.jsx";
 import HomePage from "./m12/s4.jsx";
 import DashboardPage from "./m12/s5.jsx";
 import NotFoundPage from "./m12/s2.jsx";
-import CobaAxios from "./m13/s1.jsx";
-import App from "./m13/s2.jsx";
-// import CobaAxios from "./m13/Axios.jsx";
+// import CobaAxios from "./m13/s1.jsx";
+// import App from "./m13/s2.jsx";
+import ToggleSwitch from "./m11/s1.jsx";
+import DetailPage from "./m14/UseParams.jsx";
+// import App from "./m14/UseParams2.jsx";
+import CobaAxios from "./m13/Axios.jsx";
+import CobaUseParams from "./m14/UseParams.jsx";
+import PostDetail from "./m14/ApiDinamis.jsx";
+// import BookList from "./m14/s1.jsx";
+// import BookDetail from "./m14/s1pt2.jsx";
+// import App2 from "./m14/s1pt3.jsx";
+// import App3 from "./m14/app3.jsx";
+// import DetailProducts from "./m14/s2.jsx";
+// import { BooksDetail, MapBooks } from "./m14/soal 1/components.jsx";
+import App from "./m14/soal 2/app.jsx";
+import BookVerse from "./m14/soal 1/components.jsx";
+
 
 
 
@@ -54,6 +68,6 @@ import App from "./m13/s2.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>  
-    < App/>
+    < BookVerse />
   </StrictMode>
 );
