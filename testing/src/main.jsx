@@ -51,7 +51,8 @@ import PostDetail from "./m14/ApiDinamis.jsx";
 // import DetailProducts from "./m14/s2.jsx";
 // import { BooksDetail, MapBooks } from "./m14/soal 1/components.jsx";
 import App from "./m14/soal 2/app.jsx";
-import BookVerse from "./m14/soal 1/components.jsx";
+import { BookCard, BooksDetail, MapBooks } from "./m14/soal 1/components.jsx";
+
 
 
 
@@ -68,6 +69,6 @@ import BookVerse from "./m14/soal 1/components.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>  
-    < BookVerse />
+    < MapBooks />
   </StrictMode>
 );

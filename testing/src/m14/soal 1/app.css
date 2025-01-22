@@ -1,107 +1,56 @@
 .book-list-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  gap: 30px;
+  justify-content: flex-start; /* Kartu sejajar ke kiri */
+  margin: 20px 10px; /* Margin lebih kecil */
+  gap: 15px; /* Jarak antar kartu diperpendek */
+  padding: 0 20px; /* Padding untuk memberi ruang dari sisi layar */
 }
 
 .book-card {
-  border: 1px solid #ccc;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(144, 144, 144, 0.2);
-  width: 250px;
-  height: fit-content;
-  padding: 20px;
+  border: 1px solid #ddd; /* Border yang lebih halus */
+  border-radius: 8px; /* Radius yang lebih kecil */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih lembut */
+  width: 220px; /* Ukuran kartu lebih ramping */
+  height: auto;
+  padding: 10px; /* Padding dalam kartu */
+  background-color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  transition: all 0.3s ease;
+  text-align: left; /* Menyesuaikan dengan tampilan e-commerce */
+  transition: all 0.2s ease;
 }
 
 .book-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  transform: scale(1.05); /* Efek zoom lebih lembut */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Bayangan lebih tegas saat hover */
   cursor: pointer;
 }
 
 .book-card img {
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
+  width: 100%; /* Gambar memenuhi kartu */
+  height: 200px; /* Tinggi gambar seragam */
+  object-fit: cover; /* Memastikan gambar tidak terdistorsi */
   object-position: center;
-  border-radius: 15px 15px 0 0;
-  transition: height 0.3s ease;
+  border-radius: 8px 8px 0 0; /* Menyelaraskan dengan border kartu */
+  background-color: #f9f9f9; /* Warna latar belakang abu terang */
 }
 
 .book-card-info {
-  margin: 0px 0px 0px 0px;
+  padding: 10px 0;
+  font-size: 14px;
 }
 
 .book-card-info p {
-  margin: 0px 0px 5px 0px;
+  margin: 5px 0;
+  color: #666;
 }
 
 .book-card-desc {
-  margin: 0px 0px 0px 0px;
+  margin: 10px 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #888;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-}
-
-.book-detail {
-  border: 1px solid #ccc;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(144, 144, 144, 0.2);
-  width: 75%;
-  padding: 20px;
-  margin-bottom: 50px;
-  height: fit-content;
-  /* max-height: 500px; */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
-.book-detail-info {
-  margin: 0px 0px 0px 20px;
-}
-
-.book-detail img {
-  width: auto;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 15px 15px 0 0;
-}
-
-.book-detail-wrapper {
-  display: flex;
-  gap: 30px;
-}
-
-
-
-.back-button {
-  background-color: cornflowerblue;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.back-button:hover {
-  background-color: darkblue;
-  transform: scale(1.05);
 }
