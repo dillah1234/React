@@ -146,6 +146,7 @@ const styles = {
 const router = createBrowserRouter([
   { path: "/", element: <Login /> },
   { path: "/product", element: <ProductList /> },
+  { path: "/product/:id", element: <ProductDetail /> },
 ]);
 const App = () => {
   return <RouterProvider router={router} />;
