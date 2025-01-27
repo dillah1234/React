@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import "./Apt.css";
 
 
@@ -100,6 +100,7 @@ const Summary = ({ summary }) => {
 const ProductList = () => {
   const [summary, setSummary] = useState([]);
   const [products, setProducts] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios.get("https://fakestoreapi.com/products").then((response) => {
@@ -136,8 +137,14 @@ const ProductList = () => {
     });
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem("token"); // Menghapus token dari localStorage
+    navigate("/");  // Mengarahkan ke halaman login
+  };
+
   return (
     <div>
+      <button className="back-button" onClick={handleLogout}>Logout</button>
       <div className="product-list">
         {products.map((product) => (
           <Product
