@@ -1,4 +1,4 @@
-import { ProductList,ProductDetail } from "./Components";
+import { ProductList,ProductDetail } from "./components";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([

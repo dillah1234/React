@@ -48,31 +48,18 @@ import "./index.css";
 // // import BookDetail from "./m14/s1pt2.jsx";
 // // import App2 from "./m14/s1pt3.jsx";
 // // import App3 from "./m14/app3.jsx";
-// // import DetailProducts from "./m14/s2.jsx";
+// import DetailProducts from "./m14/s2.jsx";
 // // import { BooksDetail, MapBooks } from "./m14/soal 1/components.jsx";
 // import App from "./m14/soal 2/app.jsx";
-import {  BooksDetail, MapBooks } from "./m14/soal 1/components.jsx";
+import { BooksDetail, MapBooks } from "./m14/soal 1/components.jsx";
 import SimpleUseForm from "./m15 - Post/Post.jsx";
-import Login from "./m15 - Post/s2.jsx";
 import Pull from "./m15 - Post/s2.jsx";
+import { ProductList } from "./m14/soal 2/components.jsx";
+import App from "./m15 - Post/s2.jsx";
 // import Login from "./m15 - Post/s1.jsx";
 
-
-
-
-
-
-
-
-   
-
-  
-
-
-
-
 createRoot(document.getElementById("root")).render(
-  <StrictMode>  
-    < Pull />
+  <StrictMode>
+    <App />
   </StrictMode>
 );

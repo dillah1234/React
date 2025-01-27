@@ -1,19 +1,25 @@
 import { useState } from "react";
+// import { useNavigate } from "react-router-dom";
+import {
+  createBrowserRouter,
+  Link,
+  RouterProvider,
+  useNavigate,
+} from "react-router-dom";
 import axios from "axios";
+import { ProductDetail, ProductList } from "../m14/soal 2/components";
 
-const Pull = () => {
+const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
   const [token, setToken] = useState(null);
   const navigate = useNavigate();
-  
-
   const handleLogin = (e) => {
     e.preventDefault();
     setMessage("");
-    setToken(null);
-
+    // setToken(null);
+  
     axios
       .post("https://fakestoreapi.com/auth/login", {
         username,
@@ -24,10 +30,17 @@ const Pull = () => {
         const token = response.data.token;
         setToken(token);
         localStorage.setItem("token", token); // Simpan token di localStorage
-        navigate("/productDetail"); // Setelah login berhasil, arahkan ke halaman product
+        console.log(response.data.token);
+
+        if (token) {
+          navigate("/product");
+        }
       })
       .catch((error) => {
-        setMessage(error.response?.data?.message || "Login Gagal! Periksa kredensial Anda.");
+        setMessage(
+          error.response?.data?.message ||
+            "Login Gagal! Periksa kredensial Anda."
+        );
       });
   };
 
@@ -52,7 +65,12 @@ const Pull = () => {
             required
             style={styles.input}
           />
-          <button type="submit" style={styles.button}>Login</button>
+          <button type="submit" style={styles.button}>
+            Login
+          </button>
+          <Link to="/product" style={styles.link}>
+            Belum Punya Akun? Daftar Sekarang
+          </Link>
         </form>
         {message && <p style={styles.message}>{message}</p>}
       </div>
@@ -125,4 +143,12 @@ const styles = {
   },
 };
 
-export default Pull;
+const router = createBrowserRouter([
+  { path: "/", element: <Login /> },
+  { path: "/product", element: <ProductList /> },
+]);
+const App = () => {
+  return <RouterProvider router={router} />;
+};
+
+export default App;
