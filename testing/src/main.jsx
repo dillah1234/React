@@ -56,10 +56,12 @@ import SimpleUseForm from "./m15 - Post/Post.jsx";
 import Pull from "./m15 - Post/s2.jsx";
 import { ProductList } from "./m14/soal 2/components.jsx";
 import App from "./m15 - Post/s2.jsx";
+import HandleLogin from "./m16 - JWT/test.jsx";
+import AxioCard from "./m16 - JWT/s2.jsx";
 // import Login from "./m15 - Post/s1.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
+    <AxioCard/>
   </StrictMode>
 );
