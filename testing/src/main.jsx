@@ -51,17 +51,21 @@ import "./index.css";
 // import DetailProducts from "./m14/s2.jsx";
 // // import { BooksDetail, MapBooks } from "./m14/soal 1/components.jsx";
 // import App from "./m14/soal 2/app.jsx";
-import { BooksDetail, MapBooks } from "./m14/soal 1/components.jsx";
-import SimpleUseForm from "./m15 - Post/Post.jsx";
-import Pull from "./m15 - Post/s2.jsx";
-import { ProductList } from "./m14/soal 2/components.jsx";
-import App from "./m15 - Post/s2.jsx";
+// import { BooksDetail, MapBooks } from "./m14/soal 1/components.jsx";
+// import SimpleUseForm from "./m15 - Post/Post.jsx";
+// import Pull from "./m15 - Post/s2.jsx";
+// import { ProductList } from "./m14/soal 2/components.jsx";
+// import App from "./m15 - Post/s2.jsx";
 import HandleLogin from "./m16 - JWT/test.jsx";
 import AxioCard from "./m16 - JWT/s2.jsx";
+import CreateUser from "./m17-CRUD/test.jsx";
+import App from "./m17-CRUD/Soal 2/App.jsx";
+import NewAxios from "./m17-CRUD/Soal 1/Routing.jsx";
+// import App from "./m17-CRUD/Routing.jsx";
 // import Login from "./m15 - Post/s1.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <AxioCard/>
+    <App/>
   </StrictMode>
 );
