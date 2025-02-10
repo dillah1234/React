@@ -66,14 +66,17 @@ import UpdateItem from "./m18-CRUD V2/Test";
 // import UpdateProduct from "./m18-CRUD V2/Soal 2/Update.jsx";
 // import Home from "./m18-CRUD V2/Soal 2/Components.jsx";
 import App from "./m18-CRUD V2/Soal 1/App.jsx";
+import CustomerCounter from "./m19-ZUZTAND/s1.jsx";
+import Counter from "./m19-ZUZTAND/Test.jsx";
+import TodoList from "./m19-ZUZTAND/s2.jsx";
 // import App from "./m18-CRUD V2/Soal 2/App.jsx";
 // import NewAxios from "./m17-CRUD/Soal 1/Routing.jsx";
-// import { CreateUser, DeleteUser } from "./m18-CRUD V2/UserManagement.jsx";
+// import { CreateUser, DeleteUser } from "./m18-CRUD V2/UserManagement.jsx"; 
 // import App from "./m17-CRUD/Routing.jsx";
 // import Login from "./m15 - Post/s1.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App/>
+    <TodoList/>
   </StrictMode>
-);
+)
